@@ -523,24 +523,6 @@ function handleSubmit(event) {
   inputName.focus();
 }
 
-// ── Inline error styles (injected once, avoids extra CSS file) ──
-// These are minimal and scoped — the rest of the design lives in style.css.
-(function injectErrorStyles() {
-  const style = document.createElement('style');
-  style.textContent = `
-    .field-error {
-      font-size: 0.8125rem;
-      color: #ff5c5c;
-      margin-top: 4px;
-    }
-    .input-error {
-      border-color: #ff5c5c !important;
-      box-shadow: 0 0 0 3px rgba(255, 92, 92, 0.15) !important;
-    }
-  `;
-  document.head.appendChild(style);
-})();
-
 // ── Event Listeners ──────────────────────────────────────────
 form.addEventListener('submit', handleSubmit);
 

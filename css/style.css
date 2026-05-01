@@ -425,6 +425,18 @@ main {
   padding: 12px 0 4px;
 }
 
+/* Form validation errors */
+.field-error {
+  font-size: 0.8125rem;
+  color: #ff5c5c;
+  margin-top: 4px;
+}
+
+.input-error {
+  border-color: #ff5c5c !important;
+  box-shadow: 0 0 0 3px rgba(255, 92, 92, 0.15) !important;
+}
+
 /* ============================================================
    Chart Section
    ============================================================ */
